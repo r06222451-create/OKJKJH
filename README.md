@@ -26,6 +26,17 @@ python3 alerts/temp_alert.py
 
 Grafana is at **http://localhost:3000** — login with default username and password (admin/admin)
 
+## Standard Operating Ranges
+
+Baselines for a typical onshore wellhead:
+
+| Metric | Normal Range |
+|--------|-------------|
+| **Temperature** | 100–180°F |
+| **Pressure** | 800–1,200 psi |
+| **Flow Rate** | 200–600 barrels/day |
+
+> The simulator runs cooler (60–95°F) so alerts trigger more often during testing.
 
 
 
