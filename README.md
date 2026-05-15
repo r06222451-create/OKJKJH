@@ -14,10 +14,12 @@ A real-time telemetry stack for monitoring wellhead assets — pressure, tempera
 ```bash
 # Fire up the stack
 docker compose up -d
-
+```
+```bash
 # Start the sensor simulator
 python3 scripts/sensor_simulator.py
-
+```
+```bash
 # Kick off Telegram alerting (separate terminal)
 python3 alerts/temp_alert.py
 ```
