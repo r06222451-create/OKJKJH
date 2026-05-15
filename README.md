@@ -50,7 +50,7 @@ Currently wired for testing — it alerts on **normal** conditions so you see re
 ### Alert Pipeline
 
 ```
-### Sensor Simulator → MQTT → Telegraf → InfluxDB → temp_alert.py → Telegram
+** Sensor Simulator → MQTT → Telegraf → InfluxDB → temp_alert.py → Telegram **
 ```
 
 
