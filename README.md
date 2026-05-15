@@ -24,7 +24,7 @@ python3 scripts/sensor_simulator.py
 python3 alerts/temp_alert.py
 ```
 
-Grafana is at **http://localhost:3000** — login with default username and password (admin/admin)
+> Grafana is at **http://localhost:3000** — login with default username and password (admin/admin)
 
 ## Standard Operating Ranges
 
