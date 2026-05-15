@@ -2,7 +2,6 @@
 
 A real-time telemetry stack for monitoring wellhead assets — pressure, temperature, and flow rate. Built to mirror the kind of monitoring International Energy Services Limited runs in the field.
 
-----------------------------------------------------------------------------------------------------
 
 ## Architecture
 
@@ -12,7 +11,6 @@ A real-time telemetry stack for monitoring wellhead assets — pressure, tempera
 - **Grafana** | Dashboards with proper oilfield units (psi, °F, barrels/day) |
 - **Telegram Alerts** | Pings you when temp or pressure step out of line |
 
-----------------------------------------------------------------------------------------------------
 
 ## How to Run
 ```bash
@@ -29,8 +27,7 @@ python3 alerts/temp_alert.py
 ```
 
 > Grafana is at **http://localhost:3000** — login with default username and password (admin/admin)
-                                                                                                     ---------------------------------------------------------------------------------------------------
-
+                                                                                                     
 ## Standard Operating Ranges
 
 Baselines for a typical onshore wellhead:
@@ -42,7 +39,7 @@ Baselines for a typical onshore wellhead:
 | **Flow Rate** | 200–600 barrels/day |
 
 > The simulator runs cooler (60–95°F) so alerts trigger more often during testing.
-                                                                                                     ---------------------------------------------------------------------------------------------------
+                                                                                                    
 
 ## Alerts
 
@@ -53,10 +50,9 @@ Currently wired for testing — it alerts on **normal** conditions so you see re
 ### Alert Pipeline
 
 ```
-Sensor Simulator → MQTT → Telegraf → InfluxDB → temp_alert.py → Telegram
+### Sensor Simulator → MQTT → Telegraf → InfluxDB → temp_alert.py → Telegram
 ```
 
-----------------------------------------------------------------------------------------------------
 
 ## Project Structure
 
@@ -78,7 +74,6 @@ iesl-monitoring/
     └── telegram-alert.png
 ```
 
-----------------------------------------------------------------------------------------------------
 
 ## Final Thoughts
 
